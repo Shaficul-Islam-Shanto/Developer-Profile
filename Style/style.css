@@ -21,16 +21,14 @@
   }
 /* Head Section Related Styles */
 .head-section{
-    background: url("../images/developer.png"), url("../images/header_bg.png"), rgb(255, 248, 243);
+    background:url("../images/developer.png"), url("../images/header_bg.png"), rgb(255, 248, 243);
     background-repeat: no-repeat;
     background-position: top left, bottom right;
     padding-top: 30px;
 
 }
   /* Navbar related styles */
-
 .nav-container{
-    /* width: 1800px; */
     margin: 0px 230px;
     display: flex;
     justify-content: space-between;
@@ -61,7 +59,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 50px 80px 50px 230px;
+    margin: 50px 35px 50px 230px;
 }
 .banner-text{
     width: 600px;
@@ -87,5 +85,36 @@
     margin-left: 20px;
 }
 .banner-img{
-    /* width: 100%; */
+    width:600px;
+}
+@media  screen and (max-width: 576px) {
+    .nav-container,
+    .nav-links ul,
+    .banner-container
+    {
+        flex-direction: column;
+        margin: 0px auto;
+    }
+    .nav-links ul li{
+        margin: 10px;
+    }
+    .head-section{
+        background-image: none;
+    }
+    .nav-logo{
+        margin-bottom: 20px;
+    }
+    .banner-img,
+    .banner-text
+    {
+        width: 100%;
+        text-align: center;
+    }
+    .banner-text p,{
+        margin: 20px auto;
+    }
+    .banner-text h1{
+        margin: -20px auto 20px;
+    }
+    
 }
